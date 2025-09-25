@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto AJAX</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        nav{
+            font-size: 2em;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: #ffffff;
+            padding: 0 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <a href="">Séries</a>
+        <a href="">Linguagens</a>
+
+        <div class="pagina"></div>
+    </nav>
+
+    <script>
+        function navegarViaAjax(url, seletor, push = true){
+            if(!url || !select) return
+            const elemento = document.querySelector(seletor)
+            fetch(url)
+            .then(resp => rest.text())
+            .then(html => elemento.innerHTML = html)
+
+            if(push){
+                history.pushState({seletor}, "Página Ajax", url
+
+                )}
+            }
+        
+        document.querySelectorAll('[wm-link]').forEach(link => {
+            const url = link.attributes['w-link'].values
+            const seletorDestino = link.attributes['wm-destino'].values
+            link.onclick = e =>{
+                e.preventDefault()
+                navegarViaAjax(url, seletorDestino)
+            }
+
+            window.onpopstate = e => {
+                if(e.state){
+                    navegarViaAjax(window.location.href), e.state.seletor, false
+                }
+            }
+        })
+    </script>
+</body>
+</html>
