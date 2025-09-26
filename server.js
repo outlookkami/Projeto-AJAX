@@ -1,5 +1,5 @@
-const bodyParser = require("body-parser"); // biblioteca que acabamos de instalar 
-const express = require("express"); // biblioteca que acabamos de instalar
+const bodyParser = require('body-parser'); // biblioteca que acabamos de instalar 
+const express = require('express'); // biblioteca que acabamos de instalar
 const serv = express(); // criar o servidor do app da biblioteca express
 
 //bibliotecas instaladas com os comandos no command prompt:  
@@ -7,13 +7,10 @@ const serv = express(); // criar o servidor do app da biblioteca express
 // npm install body-parser express multer nodemon
 
 serv.use(express.static('.')); // criar o servidor
-serv.use(bodyParser.urlencoded({
-    extended: true
-
-}));
+serv.use(bodyParser.urlencoded({ extended: true }));
 
 serv.use(bodyParser.json()); // middleware para ler dados do corpo da requisição (formulários)
-const multer = require("multer"); // middleware para lidar com uploads de arquivos
+const multer = require('multer'); // middleware para lidar com uploads de arquivos
 
 const storage = multer.diskStorage({
 
