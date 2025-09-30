@@ -1,3 +1,7 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Satisfy&display=swap" rel="stylesheet">
+
 <h1>Álbuns</h1>
 <br>
 <p>
@@ -5,41 +9,97 @@
 </p>
 <br>
 <ul>
-    <li>Taylor Swift <img class="capaAlbum" src="assets/albumTaylorSwift.jpg" alt="Capa álbum Taylor Swift"></li>
+    <li class="TaylorSwift">Taylor Swift <img class="capaAlbum" src="assets/albumTaylorSwift.jpg" alt="Capa álbum Taylor Swift"></li>
 
-    <li>Fearless <img class="capaAlbum" src="assets/albumFearlessTV.jpg" alt="Capa álbum Fearless"></li>
+    <li class="Fearless">Fearless <img class="capaAlbum" src="assets/albumFearlessTV.jpg" alt="Capa álbum Fearless"></li>
 
-    <li>Speak Now <img class="capaAlbum" src="assets/albumSpeakNowTV.jpg" alt="Capa álbum Speak Now (Taylor's Version)"></li>
+    <li class="SpeakNow">Speak Now <img class="capaAlbum" src="assets/albumSpeakNowTV.jpg" alt="Capa álbum Speak Now (Taylor's Version)"></li>
 
-    <li>Red <img class="capaAlbum" src="assets/albumRedTV.jpg" alt="Capa álbum Red (Taylor's Version)"></li>
+    <li class="Red">Red <img class="capaAlbum" src="assets/albumRedTV.jpg" alt="Capa álbum Red (Taylor's Version)"></li>
 
-    <li>1989 <img class="capaAlbum" src="assets/album1989TV.jpg" alt="Capa álbum 1989 (Taylor's Version)"></li>
+    <li class="1989">1989 <img class="capaAlbum" src="assets/album1989TV.jpg" alt="Capa álbum 1989 (Taylor's Version)"></li>
 
-    <li>Reputation <img class="capaAlbum" src="assets/albumReputation.jpg" alt="Capa álbum Reputation"></li>
+    <li class="Reputation">Reputation <img class="capaAlbum" src="assets/albumReputation.jpg" alt="Capa álbum Reputation"></li>
 
-    <li>Lover <img class="capaAlbum" src="assets/albumLover.jpg" alt="Capa álbum Lover"></li>
+    <li class="Lover">Lover <img class="capaAlbum" src="assets/albumLover.jpg" alt="Capa álbum Lover"></li>
 
-    <li>folklore <img class="capaAlbum" src="assets/albumFolklore.jpg" alt="Capa álbum folklore"></li>
+    <li class="folklore">folklore <img class="capaAlbum" src="assets/albumFolklore.jpg" alt="Capa álbum folklore"></li>
 
-    <li>evermore <img class="capaAlbum" src="assets/albumEvermore.jpg" alt="Capa álbum evermore"></li>
+    <li class="evermore">evermore <img class="capaAlbum" src="assets/albumEvermore.jpg" alt="Capa álbum evermore"></li>
 
-    <li>Midnights <img class="capaAlbum" src="assets/albumMidnights.jpg" alt="Capa álbum Midnights"></li>
+    <li class="Midnights">Midnights <img class="capaAlbum" src="assets/albumMidnights.jpg" alt="Capa álbum Midnights"></li>
 
-    <li>The Tortured Poets Department <img class="capaAlbum" src="assets/albumTheTorturedPoetsDepartment.jpg" alt="Capa álbum The Tortured Poets Department"></li>
+    <li class="ttpd">The Tortured Poets Department <img class="capaAlbum" src="assets/albumTheTorturedPoetsDepartment.jpg" alt="Capa álbum The Tortured Poets Department"></li>
 
-    <li>The Life Of A Showgirl <img class="capaAlbum" src="assets/albumTheLifeOfAShowgirl.jpg" alt="Capa álbum The Life Of A Showgirl"></li>
+    <li class="tloas">The Life Of A Showgirl <img class="capaAlbum" src="assets/albumTheLifeOfAShowgirl.jpg" alt="Capa álbum The Life Of A Showgirl"></li>
 </ul>
 
 
 <style>
+/* Fontes */
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 
+.crimson-text-regular {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.crimson-text-semibold {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.crimson-text-bold {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.crimson-text-regular-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.crimson-text-semibold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.crimson-text-bold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.satisfy-regular {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+    /* CSS */
+    body{
+        background: linear-gradient(to bottom, #F4C2C2, #C3AED6 ,#2E2A4A);
+        color: white;
+    }
     h1{
+        text-align: center;
         align-content: center;
+        font-size: 50px;
     }
 
-    p{
+    p{   
         text-align: justify;
-        align-content: center;
+        margin: 0 400;
+        font-size: 20px;
     }
 
     ul{
@@ -54,7 +114,7 @@
         list-style: none;
         justify-content: center;
         text-align: center;
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .capaAlbum{
@@ -63,6 +123,16 @@
         flex-direction: column;
         padding: 20px;
     }
+
+    .TaylorSwift{ font-family: 'Satisfy', cursive;}
+
+    .Fearless{ font-family: 'Cinzel';}
+
+    .SpeakNow{ font-family: 'Great Vibes';}
+
+    .Red{ font-family: 'Crimson Text';}
+
+    .ttpd{ font-family: 'Cinzel';}
 
 </style>
 
