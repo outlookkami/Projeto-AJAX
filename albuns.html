@@ -1,7 +1,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Satisfy&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 <h1>Álbuns</h1>
 <br>
 <p>
@@ -17,7 +17,7 @@
 
     <li class="Red">Red <img class="capaAlbum" src="assets/albumRedTV.jpg" alt="Capa álbum Red (Taylor's Version)"></li>
 
-    <li class="1989">1989 <img class="capaAlbum" src="assets/album1989TV.jpg" alt="Capa álbum 1989 (Taylor's Version)"></li>
+    <li class="nten">1989 <img class="capaAlbum" src="assets/album1989TV.jpg" alt="Capa álbum 1989 (Taylor's Version)"></li>
 
     <li class="Reputation">Reputation <img class="capaAlbum" src="assets/albumReputation.jpg" alt="Capa álbum Reputation"></li>
 
@@ -43,39 +43,9 @@
     font-style: normal;
 }
 
-.crimson-text-regular {
-  font-family: "Crimson Text", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.crimson-text-semibold {
-  font-family: "Crimson Text", serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.crimson-text-bold {
-  font-family: "Crimson Text", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
 .crimson-text-regular-italic {
   font-family: "Crimson Text", serif;
   font-weight: 400;
-  font-style: italic;
-}
-
-.crimson-text-semibold-italic {
-  font-family: "Crimson Text", serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.crimson-text-bold-italic {
-  font-family: "Crimson Text", serif;
-  font-weight: 700;
   font-style: italic;
 }
 
@@ -85,10 +55,32 @@
   font-style: normal;
 }
 
+.patrick-hand-regular {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.unifrakturmaguntia-regular {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cormorant-garamond {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: italic;
+}
+
+
     /* CSS */
     body{
         background: linear-gradient(to bottom, #F4C2C2, #C3AED6 ,#2E2A4A);
         color: white;
+        justify-content: center;
+        align-items: center;
     }
     h1{
         text-align: center;
@@ -115,6 +107,9 @@
         justify-content: center;
         text-align: center;
         font-size: 40px;
+        align-items:center;
+        display:flex;
+        flex-direction: column;
     }
 
     .capaAlbum{
@@ -122,6 +117,8 @@
         display: flex;
         flex-direction: column;
         padding: 20px;
+        justify-content: center;
+        align-items: center;
     }
 
     .TaylorSwift{ font-family: 'Satisfy', cursive;}
@@ -131,6 +128,16 @@
     .SpeakNow{ font-family: 'Great Vibes';}
 
     .Red{ font-family: 'Crimson Text';}
+
+    .nten{font-family: 'Patrick Hand';}
+
+    .Reputation{font-family: 'UnifrakturMaguntia';}
+
+    .Lover{font-family: 'Dancing Script';}
+
+    .folklore{font-family: 'Crimson Text';}
+
+    .evermore{font-family: 'Cormorant Garamond';}
 
     .ttpd{ font-family: 'Cinzel';}
 
