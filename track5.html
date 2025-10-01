@@ -10,29 +10,59 @@
 </p>
 <br>
 <ul>
-    <li class="TaylorSwift">Track 5 <img class="capaAlbum" src="assets/albumTaylorSwift.jpg" alt="Capa álbum Taylor Swift"></li>
+    <li><h3 class="TaylorSwift">Cold as you</h3>
+    <p>You have a way of coming easily to me
+And when you take, you take the very best of me
+So I start a fight 'cause I need to feel somethin'
+And you do what you want 'cause I'm not what you wanted
+Oh, what a shame
+What a rainy ending given to a perfect day
+Just walk away
+Ain't no use defending words that you will never say
+And now that I'm sittin' here thinkin' it through
+I've never been anywhere cold as you
+You put up the walls and paint them all a shade of gray
+And I stood there loving you, and wished them all away
+And you come away with a great little story
+Of a mess of a dreamer with the nerve to adore you
+Oh, what a shame
+What a rainy ending given to a perfect day
+Just walk away
+Ain't no use defending words that you will never say
+And now that I'm sittin' here thinkin' it through
+I've never been anywhere cold as you
+You never did give a damn thing, honey
+But I cried, cried for you
+And I know you wouldn't have told nobody if I died, died for you
+Died for you
+Oh, what a shame
+What a rainy ending given to a perfect day
+Oh, every smile you fake is so condescending
+Countin' all the scars you've made
+Now that I'm sittin' here thinkin' it through
+I've never been anywhere cold as you</p></li>
 
-    <li class="Fearless">Fearless <img class="capaAlbum" src="assets/albumFearlessTV.jpg" alt="Capa álbum Fearless"></li>
+    <li><h3 class="Fearless">Fearless</h3><p></p></li>
 
-    <li class="SpeakNow">Speak Now <img class="capaAlbum" src="assets/albumSpeakNowTV.jpg" alt="Capa álbum Speak Now (Taylor's Version)"></li>
+    <li><h3 class="SpeakNow">Speak Now</h3></li>
 
-    <li class="Red">Red <img class="capaAlbum" src="assets/albumRedTV.jpg" alt="Capa álbum Red (Taylor's Version)"></li>
+    <li><h3 class="Red">Red</h3> </li>
 
-    <li class="nten">1989 <img class="capaAlbum" src="assets/album1989TV.jpg" alt="Capa álbum 1989 (Taylor's Version)"></li>
+    <li><h3 class="nten">1989</h3></li>
 
-    <li class="Reputation">Reputation <img class="capaAlbum" src="assets/albumReputation.jpg" alt="Capa álbum Reputation"></li>
+    <li><h3 class="Reputation">Reputation</h3></li>
 
-    <li class="Lover">Lover <img class="capaAlbum" src="assets/albumLover.jpg" alt="Capa álbum Lover"></li>
+    <li><h3 class="Lover">Lover</h3></li>
 
-    <li class="folklore">folklore <img class="capaAlbum" src="assets/albumFolklore.jpg" alt="Capa álbum folklore"></li>
+    <li><h3 class="folklore">folklore</h3></li>
 
-    <li class="evermore">evermore <img class="capaAlbum" src="assets/albumEvermore.jpg" alt="Capa álbum evermore"></li>
+    <li><h3 class="evermore">evermore</h3></li>
 
-    <li class="Midnights">Midnights<img class="capaAlbum" src="assets/albumMidnights.jpg" alt="Capa álbum Midnights"></li>
+    <li><h3 class="Midnights">Midnights</h3></li>
 
-    <li class="ttpd">The Tortured Poets Department <img class="capaAlbum" src="assets/albumTheTorturedPoetsDepartment.jpg" alt="Capa álbum The Tortured Poets Department"></li>
+    <li><h3 class="ttpd">The Tortured Poets Department</h3></li>
 
-    <li class="tloas">The Life Of A Showgirl <img class="capaAlbum" src="assets/albumTheLifeOfAShowgirl.jpg" alt="Capa álbum The Life Of A Showgirl"></li>
+    <li><h3 class="tloas">The Life Of A Showgirl</h3></li>
 </ul>
 
 
@@ -118,10 +148,11 @@
     }
 
     ul{
-        display: flex;
-        flex-direction: column;
+        /* display: flex; */
         align-items: center;
+        flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 50px;
     }
 
@@ -130,13 +161,7 @@
         justify-content: center;
         text-align: center;
         font-size: 40px;
-    }
-
-    .capaAlbum{
-        width: 400px; 
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
+        display: block;   
     }
 
     .TaylorSwift{ font-family: 'Satisfy', cursive;}
@@ -153,11 +178,15 @@
 
     .Lover{font-family: 'Dancing Script';}
 
-    .folklore .evermore{font-family:;}
+    .folklore{font-family: 'Crimson Text';}
+
+    .evermore{font-family: 'Cormorant Garamond';}
 
     .Midnights{font-family:;}
 
     .ttpd{ font-family: 'Cinzel';}
+
+    .tloas{font-family:;}
 
 </style>
 
